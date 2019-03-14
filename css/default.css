@@ -1,0 +1,62 @@
+body {   
+	background-color:lightsteelblue;
+	background-size: cover;
+    background-image: url(../img/edUgmQ.jpg)
+}
+
+
+  
+
+      h1 {  
+         
+        color:white;
+    
+    }
+
+
+        li { 
+            
+            color:white;
+
+
+         }
+
+
+a { 
+
+color: white
+
+
+
+}
+
+
+h2 { 
+
+color:white
+
+
+}
+
+
+p { 
+
+color:white
+
+}
+
+
+#timer {
+	float: right;
+	font-family: 'VT323', monospace;
+	position: fixed;
+	max-width: 150px;
+	right: 0;
+	top: 120px;
+	margin-top: 5px;
+	padding: 15px;
+	border: 1px dashed brown;
+	border-right: 0;
+	background-color: black;
+	opacity: 0.5;
+}

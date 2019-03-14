@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Rätsel Raum</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+         <link href="../css/Room.css" rel="stylesheet">
+        <script src="../js/timer.js"></script>
+        
+    
+        
+          <script src="../js/sha256.min.js"></script>
+        <script>
+            function crypt(){
+                var x = document.getElementById("pwd").value;
+                var hashx = sha256(x);
+               document.getElementById("hash").innerHTML = hashx;
+              
+                
+                switch(hashx){
+                       
+                    case "ca3799b8ff8655da009a56751b8644cdf7e3":
+                        window.document.location.href = "Wrong1.html";
+                        break;
+                        
+                        case "766cb53c753baedac5dc782593e04694b3bae3aed057ac2ff98cc1aef6413137":
+                        window.document.location.href = "Right.html";
+                        break;
+                        
+                        case "ca3799b8ff8605da009a56751b8644cdf7e3":
+                        window.document.location.href = "Wrong1.html";
+                        break;
+                        
+                        case "766cb53c753baedac5dc782593e04694b3bae3aed057ac2ff98cc1aef6413137":
+                        window.document.location.href = "Right.html";
+                        break;
+                        
+                    default:
+                        window.document.location.href = "Wrong1.html";
+                }
+            }
+        </script>
+        
+        
+    </head>
+    
+    <body>
+
+        <ol>
+         <li><a href="../index.html">Zurück</a></li>
+        <li><a href="../Hinweise/Hinweis1.html">Hinweis 1</a></li>
+        <li><a href="../Hinweise/Hinweis2.html">Hinweis 2</a></li>
+        <li><a href="../Hinweise/Hinweis3.html">Hinweis 3</a></li>
+        <li><a href="../Hinweise/L%C3%B6sung.html">Lösung</a></li>
+        
+        
+        </ol>
+        
+        
+	<h1>Rätsel </h1>
+    <p>Du entdeckst einen weiteren Raum indem viele Ampullen zu sehen sind...</p>
+        <p>Dir kommt in den Sinn, dass dort eventuell das Gegenmittel ist
+        Du betätigst den Schalter aber es passiert nichts, die Tür bleibt zu.</p>
+        
+        <p>Auf ein Neues schaust du dich um und entdeckst am Sicherungskasten 3 Zahlenräder,
+        vielleicht können sie dir helfen...</p>
+   
+        
+        <h3>Aufgabe</h3>
+        <p>Diese 3 Zahnräder enthalten einen 3-stelligen Code kannst du ihn herausfinden?</p>
+            
+         <br>   
+    
+    <br>
+            
+    <img src="../img/Zahnr%C3%A4der.png" width="500" height="500" alt="Zahnräder">
+    
+   <P>Code:</P>
+        <input type="text" id="pwd">
+        <input type="button" value="Prüfen" onclick="crypt();">
+        <div id="hash">
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         <div id="timer"> 
+		<p id="time">Aktuelle Uhrzeit</p>
+		<h1>Stoppuhr</h1>
+		<p id="tracker">0:0:0</p>
+		<button id="startstop" class="btn" onclick="startstop()">Start</button>
+        
+        </div>
+        
+        
+        
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
